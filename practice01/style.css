@@ -1,0 +1,38 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: bisque;
+}
+.menu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+#about {
+    flex: 2;
+}
+
+#about img {
+    width: 100%;
+}
+
+aside {
+    flex: 1;
+    padding: 10px;
+    background-color: darkgray;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: ghostwhite;
+}
