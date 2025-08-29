@@ -3,12 +3,13 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
         <title>원티드 메인처럼 보이는 뼈대만(스타일 없이 구조만)</title>
     </head>
     <body>
         <header>
             <h1>원티드</h1>
-            <nav>
+            <nav class="menu">
                 <ul>
                     <li>
                         <a
@@ -46,52 +47,61 @@
             </nav>
         </header>
         <main>
-            <section aria-labelledby="my-info">
-                <h2 id="my-info">내 정보</h2>
-                <p>안녕하세요 ***님</p>
-                <a href="https://id.wanted.jobs">내 정보 자세히 보기</a>
-            </section>
-            <section aria-labelledby="jobs">
-                <h2 id="jobs">채용 공고</h2>
-                <article>
-                    <img
-                        src="./assets/naver.webp"
-                        alt="네이버클라우드 AI Solution FE 개발 채용공고"
-                    />
-                    <h3>AI Solution FE 개발</h3>
-                    <p>네이버클라우드</p>
-                    <p>경기 성남</p>
-                </article>
-                <article>
-                    <img src="./assets/devDab.webp" alt="데브댑 프론트엔드 개발자 채용공고" />
-                    <h3>프론트엔드 개발자</h3>
-                    <p>데브댑</p>
-                    <p>경기 화성</p>
-                </article>
-                <article>
-                    <img
-                        src="./assets/nextGround.webp"
-                        alt="넥스트그라운드 [인턴] 프론트엔드 개발자 (전환형) 채용공고"
-                    />
-                    <h3>[인턴] 프론트엔드 개발자 (전환형)</h3>
-                    <p>넥스트그라운드</p>
-                    <p>서울 강남</p>
-                </article>
-                <article>
-                    <img
-                        src="./assets/cyclops.webp"
-                        alt="키클롭스 프론트엔드 개발 (React) 채용공고"
-                    />
-                    <h3>프론트엔드 개발 (React)</h3>
-                    <p>키클롭스</p>
-                    <p>경기 성동</p>
-                </article>
-            </section>
-            <section>
-                <h2>지금 주목할 소식</h2>
-                <h3>패스트뷰 전 직군 채용</h3>
-                <p>개발, 마케팅, 영업 등 채용 중</p>
-            </section>
+            <div class="main-content">
+                <section class="profile" aria-labelledby="my-info">
+                    <h2 id="my-info">내 정보</h2>
+                    <p>안녕하세요 ***님</p>
+                    <a href="https://id.wanted.jobs">내 정보 자세히 보기</a>
+                </section>
+                <section class="job-listings" aria-labelledby="jobs">
+                    <h2 id="jobs">채용 공고</h2>
+                    <div class="job-items">
+                        <article class="job_opening">
+                            <img
+                                src="./assets/naver.webp"
+                                alt="네이버클라우드 AI Solution FE 개발 채용공고"
+                            />
+                            <h3>AI Solution FE 개발</h3>
+                            <p>네이버클라우드</p>
+                            <p>경기 성남</p>
+                        </article>
+                        <article class="job_opening">
+                            <img
+                                src="./assets/devDab.webp"
+                                alt="데브댑 프론트엔드 개발자 채용공고"
+                            />
+                            <h3>프론트엔드 개발자</h3>
+                            <p>데브댑</p>
+                            <p>경기 화성</p>
+                        </article>
+                        <article class="job_opening">
+                            <img
+                                src="./assets/nextGround.webp"
+                                alt="넥스트그라운드 [인턴] 프론트엔드 개발자 (전환형) 채용공고"
+                            />
+                            <h3>[인턴] 프론트엔드 개발자 (전환형)</h3>
+                            <p>넥스트그라운드</p>
+                            <p>서울 강남</p>
+                        </article>
+                        <article class="job_opening">
+                            <img
+                                src="./assets/cyclops.webp"
+                                alt="키클롭스 프론트엔드 개발 (React) 채용공고"
+                            />
+                            <h3>프론트엔드 개발 (React)</h3>
+                            <p>키클롭스</p>
+                            <p>경기 성동</p>
+                        </article>
+                    </div>
+                </section>
+            </div>
+            <div class="sub-content">
+                <section>
+                    <h2>지금 주목할 소식</h2>
+                    <h3>패스트뷰 전 직군 채용</h3>
+                    <p>개발, 마케팅, 영업 등 채용 중</p>
+                </section>
+            </div>
         </main>
         <footer>
             <section aria-labelledby="company-info">
@@ -104,7 +114,7 @@
                 <p>통신판매번호: 2020-서울송파-3147</p>
                 <p>유료직업소개사업등록번호: (국내) 제2020-3230259-14-5-00018호</p>
             </section>
-            <nav>
+            <nav class="menu">
                 <ul>
                     <li>
                         <a
